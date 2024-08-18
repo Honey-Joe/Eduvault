@@ -11,7 +11,7 @@ const Card_intro = () => {
               <p className="font-[LexendDeca] font-bold">Instructor</p>
             </div>
             <div className="w-full h-[1px] bg-gray-300"></div>
-            <div className="flex gap-10 items-center justify-center">
+            <div className="flex gap-10 items-center justify-center flex-wrap">
               <div className="w-[60%]">
                 <img
                   src={rainbow_logo}
