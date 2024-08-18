@@ -49,7 +49,7 @@ const tabsData = [
 
   return (
     <div className='2xl:container'>
-      <div className='w-[90%] xl:w-[54%] grid grid-cols-1 xl:ml-[11%] ml-1 my-11'>
+      <div className='w-[90%] xl:w-[54%] grid grid-cols-1 xl:ml-[11%] mx-auto my-11 '>
         <div>
         <div className="relative">
         <div className="flex xl:space-x-16 border-b space-x-3">
@@ -58,7 +58,7 @@ const tabsData = [
               <button
                 key={idx}
                 ref={(el) => (tabsRef.current[idx] = el)}
-                className="pt-2 pb-2 font-[LexendDeca] text-[]"
+                className="pt-2 pb-2 font-[LexendDeca] text-[#1363df]"
                 onClick={() => setActiveTabIndex(idx)}
               >
                 {tab.label}

@@ -3,15 +3,20 @@ import "./index.css"
 import Header from "./components/Header/Header"
 import Body from "./components/Body/Body"
 import Footer from "./components/Footer/Footer"
+import Righttab from "./components/Righttab/Righttab"
 
 
 
 const Applayout = ()=>{
   return(
     <>
-      <Header></Header>
+    <div>
+    <Header></Header>
+      <Righttab></Righttab>
       <Body></Body>
       <Footer></Footer>
+    </div>
+      
     </>
   )
 }

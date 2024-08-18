@@ -8,7 +8,7 @@ const Navcourse = () => {
   return (
     <>   
     <div className='2xl:container'>
-        <div className=''>
+        <div className='w-[100%] pl-3'>
         <Navabout></Navabout>
         <Navbenifit></Navbenifit>
         <Navcertificate></Navcertificate>
