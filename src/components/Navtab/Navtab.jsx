@@ -1,84 +1,164 @@
-import { useEffect, useRef, useState } from 'react';
+import * as React from 'react';
+import { styled } from '@mui/system';
+import { Tabs } from '@mui/base/Tabs';
+import { TabsList as BaseTabsList, TabsList } from '@mui/base/TabsList';
+import { TabPanel as BaseTabPanel, TabPanel } from '@mui/base/TabPanel';
+import { buttonClasses } from '@mui/base/Button';
+import { Tab as BaseTab, Tab, tabClasses } from '@mui/base/Tab';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 import Navcourse from '../Navcourse/Navcourse';
 import Curriculam from '../Curriculam/Curriculam';
-
-import SimpleSlider from '../Review/Review';
-import Review from '../Review/Review';
+import Review from '../Navreview/Navreview';
 import Announcement from '../Announcement/Announcement';
+import Content from '../Navcourse/Navcourse';
 
-const tabsData = [
-  {
-    label: 'Course Info',
-    content:
-      <Navcourse></Navcourse>,
-  },
-  {
-    label: 'Curriculam',
-    content:
-      <Curriculam></Curriculam>,
-  },
-  {
-    label: 'Review',
-    content:
-     <Review></Review>,
-  },
-  {
-    label: 'Announcement',
-    content:<Announcement></Announcement>
-  },
-];
- function Tabs() {
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
-  const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);
-  const [tabUnderlineLeft, setTabUnderlineLeft] = useState(0);
+ function Navtab(children,max) {
 
-  const tabsRef = useRef([]);
-
-  useEffect(() => {
-    function setTabPosition() {
-      const currentTab = tabsRef.current[activeTabIndex];
-      setTabUnderlineLeft(currentTab?.offsetLeft ?? 0);
-      setTabUnderlineWidth(currentTab?.clientWidth ?? 0);
-    }
-
-    setTabPosition();
-    window.addEventListener('resize', setTabPosition);
-
-    return () => window.removeEventListener('resize', setTabPosition);
-  }, [activeTabIndex]);
-
+  
+  var settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  };
+ 
   return (
+    <>
     <div className='2xl:container'>
-      <div className='w-[90%] xl:w-[54%] grid grid-cols-1 xl:ml-[11%] mx-auto my-11 '>
-        <div>
-        <div className="relative">
-        <div className="flex xl:space-x-16 border-b space-x-3">
-          {tabsData.map((tab, idx) => {
-            return (
-              <button
-                key={idx}
-                ref={(el) => (tabsRef.current[idx] = el)}
-                className="pt-2 pb-2 font-[LexendDeca] text-[#1363df]"
-                onClick={() => setActiveTabIndex(idx)}
-              >
-                {tab.label}
-              </button>
-            );
-          })}
+      <div className='xl:w-[55%] xl:ml-[12%] w-[90%] mx-auto grid grid-cols-1'>
+      <Tabs defaultValue={1}>
+      <TabsList className='pb-3'>
+        <div className='slider-container'>
+          <Slider {...settings}>
+            <div>
+        <Tab value={1} slotProps={{
+            root: ({ selected, disabled }) => ({
+              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+                selected
+                  ? 'text-[#1363df] border-b-4 border-[#1363df] '
+                  : 'text-[#39557e]'
+              } ${
+                disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
+              } text-sm font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+            }),
+          }}>
+          
+          <button  className=''>Course Info</button>
+          </Tab>
+
+            </div>
+            <div>
+        <Tab value={2} slotProps={{
+            root: ({ selected, disabled }) => ({
+              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+                selected
+                  ? 'text-[#1363df] border-b-4 border-[#1363df] '
+                  : 'text-[#39557e]'
+              } ${
+                disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
+              } text-sm font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+            }),
+          }}>
+
+          <button className=''>
+            Curriculam
+          </button>
+        </Tab>
+
+            </div>
+            <div>
+        <Tab value={3} slotProps={{
+            root: ({ selected, disabled }) => ({
+              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+                selected
+                  ? 'text-[#1363df] border-b-4 border-[#1363df] '
+                  : 'text-[#39557e]'
+              } ${
+                disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
+              } text-sm  font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+            }),
+          }}>
+          <button className=''>
+          Review
+
+          </button>
+          
+          </Tab>
+
+            </div>
+            <div>
+              <Tab value={4} slotProps={{
+            root: ({ selected, disabled }) => ({
+              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+                selected
+                  ? 'text-[#1363df] border-b-4 border-[#1363df] '
+                  : 'text-[#39557e]'
+              } ${
+                disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
+              } text-sm font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+            }),
+          }}>
+                <button className=''>Announcement</button>
+              </Tab>
+            </div>
+          </Slider>
         </div>
-        <span
-          className="absolute bottom-0 block h-[2px] bg-[#1363DF] transition-all duration-300"
-          style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
-        />
+        
+      </TabsList>
+      <TabPanel value={1}>
+        <Content></Content>
+      </TabPanel>
+      <TabPanel value={2}>
+          <Curriculam></Curriculam>
+        </TabPanel>
+      <TabPanel value={3}>
+
+        <Review></Review>
+      </TabPanel>
+      <TabPanel value={4}>
+        <Announcement></Announcement>
+      </TabPanel>
+    </Tabs>
       </div>
-      <div className="py-4">
-        <p>{tabsData[activeTabIndex].content}</p>
-      </div>
-        </div>
-      
-      </div>
-      
     </div>
+      
+    </>
+    
   );
 }
-export default Tabs
+
+export default Navtab
+
+

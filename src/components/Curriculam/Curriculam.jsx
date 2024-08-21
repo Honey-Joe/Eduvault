@@ -6,18 +6,18 @@ const Curriculam = () => {
   return (
     <>
         <div>
-            <div>
-                <h1 className=" font-bold text-[28px] font-[LexendDeca]">Course Curriculum</h1>
+            <div className="px-6 py-8">
+                <h1 className=" font-semibold text-[22px] font-[LexendDeca] text-[#082a5e]">Course Curriculum</h1>
                 <div className=" pt-5 group">
-                    <button onClick={()=> setAccordion(!accordion)} className={`flex items-center justify-between w-full p-3 rounded-md border-slate-600 border-[1px] ${accordion ? 'rounded-bl-none rounded-br-none text-[#1363df] bg-[#e3e5eb] transition ease-in-out' : 'rounded-md'}`}>
-                        <span className=" font-bold font-[LexendDeca] text-[20px] transition-colors ease-in-out group-hover:text-[#1363df]">Advance Concepts</span>
+                    <button  onClick={()=> setAccordion(!accordion)} className={`flex items-center justify-between w-full p-3 rounded-md border-2  ${accordion ? 'rounded-bl-none rounded-br-none text-[#1363df] bg-[#e3e5eb] transition ease-in-out' : 'rounded-md'}`}>
+                        <span className=" font-semibold font-[LexendDeca] text-[18px] transition-colors ease-in-out group-hover:text-[#1363df]">Advance Concepts</span>
                         
                         <span><ChevronRight className={`${accordion? '-rotate-90 transition stroke-[#1363df]' : ' rotate-0 transition stroke-[#1363df]'}`}/></span>
                     </button>
-                    <div className={`grid overflow-hidden transition-all border-slate-600 border-[1px] rounded-b-md duration-300 ease-in-out  text-sm ${
+                    <div  className={`grid overflow-hidden transition-all  rounded-b-md duration-300 ease-in-out  text-sm border-2 ${
                         accordion ? 'grid-rows-[1fr] opacity-100 ease-in-out delay-700 transition-all':'grid-rows-[0fr] opacity-0 hidden transition'
                     }`}>
-                        <div className="p-3 flex items-center justify-between hover:bg-[#e3e5eb] ">
+                        <div className="p-3 flex items-center justify-between hover:bg-[#e3e5eb]">
                             <div className=" flex items-center gap-2">
                                 <Youtube className="font-bold h-5 text-slate-600"/>
                                 <p className=" font-medium text-[16px] hover:bg-[#ebecef] font-[LexendDeca] text-slate-800 ">Meal Planning Explained</p>
@@ -54,12 +54,12 @@ const Curriculam = () => {
                 </div>
                 <br />
                 <div className=" pt-0 group">
-                    <button onClick={()=> setBasic(!basic)} className={`flex items-center justify-between w-full  p-3 rounded-md border-slate-600 border-[1px] ${basic ? 'rounded-bl-none rounded-br-none text-[#1363df] bg-[#e3e5eb]' : 'rounded-md'}`}>
-                        <span className=" font-bold font-[LexendDeca] text-[20px] transition-colors ease-in-out group-hover:text-[#1363df]">Advance Concepts</span>
+                    <button  onClick={()=> setBasic(!basic)} className={`flex items-center justify-between w-full  p-3 rounded-md border-2  ${basic ? 'rounded-bl-none rounded-br-none text-[#1363df] bg-[#e3e5eb] '  : 'rounded-md'}`}>
+                        <span className=" font-semibold font-[LexendDeca] text-[18px] transition-colors ease-in-out group-hover:text-[#1363df]">Advance Concepts</span>
                         
                         <span><ChevronRight className={`${basic? '-rotate-90 transition stroke-[#1363df]' : ' rotate-0 transition stroke-[#1363df]'}`}/></span>
                     </button>
-                    <div className={`grid overflow-hidden transition-all border-slate-600 border-[1px] rounded-b-md duration-300 ease-in-out  text-sm ${
+                    <div className={`grid overflow-hidden transition-all  border-2 rounded-b-md duration-300 ease-in-out  text-sm ${
                         basic ? 'grid-rows-[1fr] opacity-100':'grid-rows-[0fr] opacity-0 hidden'
                     }`}>
                         <div className="p-5 flex items-center justify-between hover:bg-[#e3e5eb]">

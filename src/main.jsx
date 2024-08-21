@@ -4,6 +4,7 @@ import Header from "./components/Header/Header"
 import Body from "./components/Body/Body"
 import Footer from "./components/Footer/Footer"
 import Righttab from "./components/Righttab/Righttab"
+import Navcard from "./components/Navreview/Navcard"
 
 
 
