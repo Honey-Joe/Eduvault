@@ -34,7 +34,7 @@ const Navcard = () => {
                 </div>
 
               </div>
-              <div className='flex justify-center items-center'>
+              <div className='flex justify-center items-center gap-2'>
                 <div className='h-[1px] bg-orange-500 w-full'>
                 </div>
                 <div>

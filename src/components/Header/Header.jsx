@@ -5,7 +5,7 @@ import { Clock, FileText, Star, Users } from "lucide-react";
 const Header = () => {
   return (
     <>
-      <div className="2xl:container w-[100%] bg-[#041734]">
+      <div className="2xl:container bg-[#041734] mx-auto w-[430px] sm:w-full">
         <div className="w-[78%] mx-auto grid grid-cols-1 py-10">
           <div className="flex flex-col gap-3 items-start">
             <button className="px-3 pt-2 pb-1 font-[Hind] font-medium text-[14px] flex items-center text-white bg-[#04BC53] rounded-full leading-none">

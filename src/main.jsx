@@ -3,8 +3,6 @@ import "./index.css"
 import Header from "./components/Header/Header"
 import Body from "./components/Body/Body"
 import Footer from "./components/Footer/Footer"
-import Righttab from "./components/Righttab/Righttab"
-import Navcard from "./components/Navreview/Navcard"
 
 
 
@@ -13,7 +11,7 @@ const Applayout = ()=>{
     <>
     <div>
     <Header></Header>
-      <Righttab></Righttab>
+      
       <Body></Body>
       <Footer></Footer>
     </div>

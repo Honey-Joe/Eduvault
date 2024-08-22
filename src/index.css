@@ -10,7 +10,25 @@
 #certi{
   box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41);
 }
+#an::after{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 1.5px;
+  background-color: #2f57ef;
+  left: 50;
+  bottom: 12px;
+  border-radius: 50px;
+}
 
+#an:hover::after{
+  width: 100%;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+#hel{
+  background: linear-gradient(to left, #2f57ef, #b966e7, #b966e7, #2f57ef);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

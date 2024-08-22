@@ -28,12 +28,12 @@ import Content from '../Navcourse/Navcourse';
     
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
@@ -57,7 +57,7 @@ import Content from '../Navcourse/Navcourse';
   return (
     <>
     <div className='2xl:container'>
-      <div className='xl:w-[55%] xl:ml-[12%] w-[90%] mx-auto grid grid-cols-1'>
+      <div className='lg:w-[55%] lg:ml-[10%] w-[90%] mx-auto grid grid-cols-1 mb-28'>
       <Tabs defaultValue={1}>
       <TabsList className='pb-3'>
         <div className='slider-container'>
@@ -65,13 +65,13 @@ import Content from '../Navcourse/Navcourse';
             <div>
         <Tab value={1} slotProps={{
             root: ({ selected, disabled }) => ({
-              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+              className: `font-[LexendDeca]  border-b-4 ${
                 selected
                   ? 'text-[#1363df] border-b-4 border-[#1363df] '
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-sm font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[20px]  font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
             }),
           }}>
           
@@ -82,13 +82,13 @@ import Content from '../Navcourse/Navcourse';
             <div>
         <Tab value={2} slotProps={{
             root: ({ selected, disabled }) => ({
-              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+              className: `font-[LexendDeca] border-b-4 ${
                 selected
                   ? 'text-[#1363df] border-b-4 border-[#1363df] '
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-sm font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[20px] font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
             }),
           }}>
 
@@ -101,13 +101,13 @@ import Content from '../Navcourse/Navcourse';
             <div>
         <Tab value={3} slotProps={{
             root: ({ selected, disabled }) => ({
-              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+              className: `font-[LexendDeca]  border-b-4 ${
                 selected
                   ? 'text-[#1363df] border-b-4 border-[#1363df] '
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-sm  font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[20px]  font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
             }),
           }}>
           <button className=''>
@@ -121,13 +121,13 @@ import Content from '../Navcourse/Navcourse';
             <div>
               <Tab value={4} slotProps={{
             root: ({ selected, disabled }) => ({
-              className: `font-[LexendDeca] text-[17px] border-b-4 ${
+              className: `font-[LexendDeca] border-b-4 ${
                 selected
                   ? 'text-[#1363df] border-b-4 border-[#1363df] '
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-sm font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[20px] font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
             }),
           }}>
                 <button className=''>Announcement</button>

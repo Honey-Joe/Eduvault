@@ -11,7 +11,7 @@ const Card_intro = () => {
               <p className="font-[LexendDeca] font-bold">Instructor</p>
             </div>
             <div className="w-full h-[1px] bg-gray-300"></div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center justify-center ">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 items-center justify-center ">
               <div className="flex justify-center py-3">
                 <img
                   src={rainbow_logo}
@@ -49,10 +49,10 @@ const Card_intro = () => {
                   </p>
                 </div>
                 <div className="flex gap-4">
-                  <Facebook className="cursor-pointer lg:w-[4%] hover:text-[#2f57ef]" />
-                  <Twitter className="cursor-pointer lg:w-[4%] hover:text-[#2f57ef]"></Twitter>
-                  <Instagram className="cursor-pointer lg:w-[4%] hover:text-[#2f57ef]"></Instagram>
-                  <Linkedin className="cursor-pointer lg:w-[4%] hover:text-[#2f57ef]"></Linkedin>
+                  <Facebook className="cursor-pointer lg:w-[15%] hover:text-[#2f57ef]" />
+                  <Twitter className="cursor-pointer lg:w-[15%] hover:text-[#2f57ef]"></Twitter>
+                  <Instagram className="cursor-pointer lg:w-[15%] hover:text-[#2f57ef]"></Instagram>
+                  <Linkedin className="cursor-pointer lg:w-[15%] hover:text-[#2f57ef]"></Linkedin>
                 </div>
               </div>
             </div>
