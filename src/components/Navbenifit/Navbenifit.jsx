@@ -9,8 +9,7 @@ const Navbenifit = () => {
         <div className="w-[100%] grid grid-cols-1 px-8 py-6 bg-white rounded-lg" id="certi">
           <div className="py-3 flex flex-col gap-2">
             <p className="font-[LexendDeca] font-bold text-[20px] text-[#192335]">
-              Benefits of the course
-            </p>
+            Who Should Enroll             </p>
             <hr />
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="flex ">
@@ -19,8 +18,7 @@ const Navbenifit = () => {
                 </div>
                 <p className="font-[Hind] text-[16px] text-[#6b7385] ">
                   {" "}
-                  You don't need to learn anything just follow our <a href="https://rainbowthemes.net/docs/histudy-wp/" className="no-underline">documentation</a> 
-                  and create your dream site.
+                  Students and professionals interested in UI/UX design.
                 </p>
               </div>
               <div className="flex gap-1">
@@ -28,12 +26,23 @@ const Navbenifit = () => {
                 <Check color="#3eb75e" />{" "}
                 </div>
                 <p className="font-[Hind] text-[16px] text-[#6b7385] ">
-                  Moreover, we provide a comprehensive video guide for your
-                  convenience.{" "}
-                  <a href="https://youtu.be/DR9lxZ8kPYQ?feature=shared" className="no-underline">
-                    You can watch it here
-                  </a>{" "}
+                Graphic designers looking to enhance their digital design skills.
                 </p>
+              </div>
+              <div className="flex ">
+                <div>
+                  <Check color="#3eb75e" />
+                </div>
+                <p className="font-[Hind] text-[16px] text-[#6b7385] ">
+                  {" "}
+                  Anyone looking to transition into a career in design.                </p>
+              </div>
+              <div className="flex gap-1">
+                <div>
+                <Check color="#3eb75e" />{" "}
+                </div>
+                <p className="font-[Hind] text-[16px] text-[#6b7385] ">
+                Developers who want to learn the basics of design.                </p>
               </div>
             </div>
           </div>

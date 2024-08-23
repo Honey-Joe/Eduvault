@@ -57,7 +57,7 @@ import Content from '../Navcourse/Navcourse';
   return (
     <>
     <div className='2xl:container'>
-      <div className='lg:w-[55%] lg:ml-[10%] w-[80%] mx-auto grid grid-cols-1 mb-28'>
+      <div className='lg:w-[100%] lg:ml-[7%] w-[80%] mx-auto grid grid-cols-1 mb-28'>
       <Tabs defaultValue={1}>
       <TabsList className='pb-3'>
         <div className='slider-container'>
@@ -71,7 +71,7 @@ import Content from '../Navcourse/Navcourse';
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-[20px]  font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[18px]  font-semibold w-full px-1 py-2   flex justify-center focus:outline-0`,
             }),
           }}>
           
@@ -88,7 +88,7 @@ import Content from '../Navcourse/Navcourse';
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-[20px] font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[18px] font-semibold w-full px-1 py-2   flex justify-center focus:outline-0`,
             }),
           }}>
 
@@ -107,7 +107,7 @@ import Content from '../Navcourse/Navcourse';
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-[20px]  font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[18px]  font-semibold w-full px-1 py-2  flex justify-center focus:outline-0`,
             }),
           }}>
           <button className=''>
@@ -127,7 +127,7 @@ import Content from '../Navcourse/Navcourse';
                   : 'text-[#39557e]'
               } ${
                 disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-[20px] font-semibold w-full px-1 py-2 m-1.5  flex justify-center focus:outline-0`,
+              } text-[18px] font-semibold w-full px-1 py-2   flex justify-center focus:outline-0`,
             }),
           }}>
                 <button className=''>Announcement</button>

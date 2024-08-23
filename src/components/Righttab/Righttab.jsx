@@ -17,22 +17,22 @@ import { rainbow_logo } from "../../assets/image";
 const Righttab = () => {
   return (
     <>
-      <div className="2xl:container mx-auto p-1 rounded-xl" id="hel">
+      <div className=" p-1 rounded-xl lg:w-[60%] w-[90%] mt-11 mx-auto lg:mx-0">
         
         <div
-          className="w-[100%] grid grid-cols-1 bg-[#f5f5fa] rounded-xl mx-auto gap-10 "
+          className="w-[100%] grid grid-cols-1 bg-[#f5f5fa] border-4 border-[#1176F0] rounded-xl mx-auto gap-10 "
           id="certi"
         >
           <div className="bg-white px-8 py-5 flex flex-col rounded-lg gap-9">
             <div className="flex items-start">
               <p className="font-[LexendDeca] font-bold text-[24px] text-[#212327]">
-                Free
+                <strike>₹ 2500</strike> ₹ 2000
               </p>
             </div>
             <div className="flex justify-center">
               <button
-                className=" py-3 font-[LexendDeca] text-white text-[14px] rounded-md w-full"
-                id="hel"
+                className=" py-3 font-[LexendDeca] text-white text-[14px] bg-[#1176F0] rounded-md w-full"
+                
               >
                 Enroll Now
               </button>
@@ -42,16 +42,10 @@ const Righttab = () => {
                 Free access this course
               </p>
             </div>
-            <div>
-              <p className="flex gap-1 font-[LexendDeca] text-[14px] text-[#757c8e] items-center">
+            <div className="">
+              <p className="flex gap-1 font-[LexendDeca] text-[14px] text-[#757c8e] justify-center items-center">
                 <CalendarCheck2Icon></CalendarCheck2Icon> Enrollment validity:
                 365 days
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <p className="flex gap-1 font-[LexendDeca] text-[14px] text-[#212327]">
-                <RotateCcw size={20} strokeWidth={1} /> 30-Day Money-Back
-                Guarantee
               </p>
             </div>
             <p className="line-clamp-3">
@@ -139,171 +133,8 @@ const Righttab = () => {
                       <hr />
                     </div>
 
-                    <div className="flex flex-col gap-3">
-                      <div>
-                        <p className="font-semibold font-[LexendDeca] text-[#192335] text-base ">
-                          Your Instructors
-                        </p>
-                      </div>
-                      <div className="flex gap-3 items-start">
-                        <img
-                          src={rainbow_logo}
-                          alt=""
-                          className="w-[20%] rounded-full"
-                        />
-
-                        <div className="flex flex-col gap-1">
-                          <p className="font-[LexendDeca] font-semibold text-base text-[#192335] ">
-                            Rainbow Themes
-                          </p>
-                          <p className="font-[Hind] text-[12px] text-[#192335] font-semibold">
-                            WordPress Developer
-                          </p>
-                          <div className="flex gap-1">
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                          </div>
-                          <div className="flex flex-col gap-5">
-                            <div className="flex justify-between gap-2 items-center">
-                              <div className="flex gap-1 items-center flex-nowrap">
-                                <File size={20} color="#6b7385"></File>{" "}
-                                <p className="text-[#6b7385] font-[LexendDeca] text-base">
-                                  0 Courses
-                                </p>
-                              </div>
-                              <div className="flex gap-1 flex-nowrap items-center">
-                                <MessageCircleMore
-                                  size={20}
-                                  color="#6b7385"
-                                ></MessageCircleMore>
-                                <p className="text-[#6b7385] font-[LexendDeca] text-base">
-                                  9 Reviews
-                                </p>
-                              </div>
-                            </div>
-                            <div>
-                              <div className="flex gap-1">
-                                <User size={20} color="#6b7385"></User>
-                                <p className="text-[#6b7385] font-[LexendDeca] text-base">
-                                  0 Students
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                      <div>
-                        <p className="font-semibold font-[LexendDeca] text-[#192335] text-base ">
-                          Your Instructors
-                        </p>
-                      </div>
-                      <div className="flex gap-3 items-start">
-                        <img
-                          src={rainbow_logo}
-                          alt=""
-                          className="w-[20%] rounded-full"
-                        />
-
-                        <div className="flex flex-col gap-1">
-                          <p className="font-[LexendDeca] font-semibold text-base text-[#192335] ">
-                            Rainbow Themes
-                          </p>
-                          <p className="font-[Hind] text-[12px] text-[#192335] font-semibold">
-                            WordPress Developer
-                          </p>
-                          <div className="flex gap-1">
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                            <Star
-                              size={20}
-                              color="#eab308"
-                              strokeWidth={0.75}
-                              fill="#eab308"
-                            />
-                          </div>
-                          <div className="flex flex-col gap-5">
-                            <div className="flex justify-between gap-2 items-center">
-                              <div className="flex gap-1 items-center flex-nowrap">
-                                <File size={20} color="#6b7385"></File>{" "}
-                                <p className="text-[#6b7385] font-[LexendDeca] text-base">
-                                  0 Courses
-                                </p>
-                              </div>
-                              <div className="flex gap-1 flex-nowrap items-center">
-                                <MessageCircleMore
-                                  size={20}
-                                  color="#6b7385"
-                                ></MessageCircleMore>
-                                <p className="text-[#6b7385] font-[LexendDeca] text-base">
-                                  9 Reviews
-                                </p>
-                              </div>
-                            </div>
-                            <div>
-                              <div className="flex gap-1">
-                                <User size={20} color="#6b7385"></User>
-                                <p className="text-[#6b7385] font-[LexendDeca] text-base">
-                                  0 Students
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr />
+                    
+                    
                     <div className="flex flex-col gap-4">
                       <p className="font-[LexendDeca] text-[#192335] font-semibold text-base">
                         Requirements
@@ -326,10 +157,10 @@ const Righttab = () => {
                       </p>
                       <div className="flex gap-3 flex-wrap">
                         <button className="bg-[#f6f6f6] py-1 px-4 rounded-lg font-[LexendDeca] text-base text-gray-700">
-                          Eduction Themes
+                          UI/UX
                         </button>
                         <button className="bg-[#f6f6f6] py-1 px-4 rounded-lg font-[LexendDeca] text-base text-gray-700">
-                          Hi Study
+                          Code Gallata
                         </button>
                         <button className="bg-[#f6f6f6] py-1 px-4 rounded-lg font-[LexendDeca] text-base text-gray-700">
                           LMS

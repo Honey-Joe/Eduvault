@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Linkedin, Star, Twitter } from "lucide-react";
-import { rainbow_logo } from "../../assets/image";
+import { author_image, rainbow_logo } from "../../assets/image";
 
 const Card_intro = () => {
   return (
@@ -14,38 +14,22 @@ const Card_intro = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 items-center justify-center ">
               <div className="flex justify-center py-3">
                 <img
-                  src={rainbow_logo}
+                  src={author_image}
                   alt=""
-                  className="h-[250px] w-[250px] rounded-full"
+                  className="h-[200px] w-[200px] rounded-full"
                 />
               </div>
               <div className="flex flex-col justify-center py-3 gap-3">
                 <p className="font-[LexendDeca] text-[20px] font-bold hover:text-[#2f57ef]">
-                  Rainbow themes
+                Suganth PV
                 </p>
                 <p className="font-[Hind] text-base text-[#6b7385]">
-                  Word press Developer
+                UIUX DESIGNER
                 </p>
-                <div className="flex gap-1">
-                  <Star className="  fill-[#FF9747] text-[#FF9747]" />
-                  <Star className="  fill-[#FF9747] text-[#FF9747]" />
-                  <Star className="  fill-[#FF9747] text-[#FF9747]" />
-                  <Star className="  fill-[#FF9747] text-[#FF9747]" />
-                  <Star className="  fill-[#FF9747] text-[#FF9747]" />
-                  <div className="flex gap-4 items-center">
-                    <p className="font-[Hind] text-[14px] text-[#6b7385]">
-                      4.86
-                    </p>
-                    <p className="font-[Hind] text-[14px] text-[#6b7385]">
-                      (7 ratings)
-                    </p>
-                  </div>
-                </div>
+                
                 <div>
-                  <p className="font-[Hind] text-[16px] text-[#212327]">
-                    I'm the Front-End Developer for #Rainbow IT in Bangladesh,
-                    OR. I have serious passion for UI effects, animations and
-                    creating intuitive, dynamic user experiences.
+                  <p className="font-[Hind] text-[14px] text-[#212327]">
+                  The trainer is a seasoned professional with over 5 years of experience in UI/UX design, having worked on a variety of projects ranging from mobile apps to web platforms. 
                   </p>
                 </div>
                 <div className="flex gap-4">

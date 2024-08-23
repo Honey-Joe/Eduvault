@@ -15,7 +15,7 @@ const Topcourse = () => {
             <div>
               <p className="font-[LexendDeca] font-bold text-[30px] text-[#192335]">
                 More Course By{" "}
-                <span className="text-[#2f57ef]">Rainbow Themes</span>
+                <span className="text-[#2f57ef]">Code Gallata</span>
               </p>
             </div>
           </div>

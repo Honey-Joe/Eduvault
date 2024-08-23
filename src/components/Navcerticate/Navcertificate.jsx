@@ -8,7 +8,7 @@ const Navcertificate = () => {
           className=" py-6 px-8 gap-5 rounded-xl "
           id="certi"
         >
-          <div className="border-y border-l-4 grid grid-cols-1 lg:grid-cols-2 rounded-xl py-4 px-4">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 rounded-xl py-4 px-4">
             <div className="py-3 px-3 flex flex-col gap-2 ">
               <p className="font-[LexendDeca] font-bold text-[20px]">
                 Earn a certificate
