@@ -11,7 +11,7 @@ const Body = () => {
     
      <YoutubeVid></YoutubeVid>
      <Navtab></Navtab> 
-      <div className='xl:-mt-[137%] lg:-mt-[210%] w-[80%] mx-auto lg:w-[30%] xl:w-[27%] lg:ml-[68%] xl:ml-[70%]  '>
+      <div className='xl:-mt-[131%] lg:-mt-[210%] w-[80%] mx-auto lg:w-[30%] xl:w-[27%] lg:ml-[68%] xl:ml-[70%]  '>
           <Righttab></Righttab>
       </div>
       <Topcourse></Topcourse>
