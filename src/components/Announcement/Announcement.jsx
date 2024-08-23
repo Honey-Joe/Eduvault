@@ -10,7 +10,7 @@ const Announcement = () => {
                         <p className='font-[LexendDeca] font-bold text-[20px]'>UI/UX Course Figma</p>
                     </div>
                     <div>
-                        <p className='py-3 px-3 bg-blue-700 font-[LexendDeca] text-white rounded-md items-center'>16 Jun</p>
+                        <p className='w-full px-3 py-3 bg-blue-700 font-[LexendDeca] text-white rounded-md items-center'>16 Jun</p>
                     </div>
                 </div>
                 <div className='flex justify-between py-3'>
