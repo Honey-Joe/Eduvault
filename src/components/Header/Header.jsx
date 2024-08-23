@@ -14,8 +14,7 @@ const Header = () => {
             </button>
             <div>
               <p className="font-[LexendDeca] font-semibold text-[36px] text-white">
-              MASTERING UIUX with 
-                <br className="hidden xl:block" /> FIGMA DESIGNING
+              MASTERING UIUX with FIGMA DESIGNING
               </p>
             </div>
             <div>
