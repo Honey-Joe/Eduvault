@@ -57,7 +57,7 @@ import Content from '../Navcourse/Navcourse';
   return (
     <>
     <div className='2xl:container'>
-      <div className='lg:w-[55%] lg:ml-[10%] w-[90%] mx-auto grid grid-cols-1 mb-28'>
+      <div className='lg:w-[55%] lg:ml-[10%] w-[80%] mx-auto grid grid-cols-1 mb-28'>
       <Tabs defaultValue={1}>
       <TabsList className='pb-3'>
         <div className='slider-container'>

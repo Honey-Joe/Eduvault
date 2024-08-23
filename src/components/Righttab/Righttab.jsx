@@ -31,7 +31,7 @@ const Righttab = () => {
             </div>
             <div className="flex justify-center">
               <button
-                className="px-24 py-3 font-[LexendDeca] text-white text-[14px] rounded-md w-full"
+                className=" py-3 font-[LexendDeca] text-white text-[14px] rounded-md w-full"
                 id="hel"
               >
                 Enroll Now
